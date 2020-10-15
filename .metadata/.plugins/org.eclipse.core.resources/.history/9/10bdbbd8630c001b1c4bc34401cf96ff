@@ -1,0 +1,3526 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-8 "http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#makes -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-8;makes">
+        <rdfs:range rdf:resource="&untitled-ontology-8;Film"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-8;FilmMaker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#playing -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-8;playing">
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Actor"/>
+        <rdfs:range rdf:resource="&untitled-ontology-8;Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#produces -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-8;produces">
+        <rdfs:range rdf:resource="&untitled-ontology-8;Film"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Last_Name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-8;Last_Name">
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Actor"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-8;FilmMaker"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Age -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-8;Age">
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Actor"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-8;FilmMaker"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#date -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-8;date">
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Film"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Producer"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#First_Name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-8;First_Name">
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Actor"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-8;FilmMaker"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-8;name">
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Producer"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#title -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-8;title">
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Film"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Type_Film -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-8;Type_Film">
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Film"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Actor -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Actor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Film -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Film"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#FilmMaker -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;FilmMaker"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Producer -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Producer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Actor4_film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor4_film1">
+        <Age rdf:datatype="&xsd;int">47</Age>
+        <Last_Name rdf:datatype="&xsd;string">Walter</Last_Name>
+        <First_Name rdf:datatype="&xsd;string">walter</First_Name>
+        <playing rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+	
+	
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Actor7_film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor7_film1">
+        <Age rdf:datatype="&xsd;int">28</Age>
+        <Last_Name rdf:datatype="&xsd;string">karim</Last_Name>
+        <First_Name rdf:datatype="&xsd;string">antoin</First_Name>
+        <playing rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+	
+	
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Actor8_film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor8_film1">
+        <Age rdf:datatype="&xsd;int">25</Age>
+        <Last_Name rdf:datatype="&xsd;string">mehdi</Last_Name>
+        <First_Name rdf:datatype="&xsd;string">abdalloui</First_Name>
+        <playing rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+    
+	
+	  <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Actor9_film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor9_film1">
+        <Age rdf:datatype="&xsd;int">55</Age>
+        <Last_Name rdf:datatype="&xsd;string">alassane</Last_Name>
+        <First_Name rdf:datatype="&xsd;string">ndiaye</First_Name>
+        <playing rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+	
+		
+	  <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Actor10_film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor10_film1">
+        <Age rdf:datatype="&xsd;int">45</Age>
+        <Last_Name rdf:datatype="&xsd;string">yorick</Last_Name>
+        <First_Name rdf:datatype="&xsd;string">mvou</First_Name>
+        <playing rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+	
+	
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Actor5_Film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor5_Film1">
+        <Age rdf:datatype="&xsd;int">43</Age>
+        <Last_Name rdf:datatype="&xsd;string">Akbari</Last_Name>
+        <First_Name rdf:datatype="&xsd;string">Mania</First_Name>
+        <playing rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+    
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#Producer1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Producer1">
+        <date rdf:datatype="&xsd;string">12/06/2010</date>
+        <name rdf:datatype="&xsd;string">Gary Lennon</name>
+        <produces rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#actor1_Film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;actor1_Film1">
+        <Age rdf:datatype="&xsd;int">26</Age>
+        <First_Name rdf:datatype="&xsd;string">Michael</First_Name>
+        <Last_Name rdf:datatype="&xsd;string">Winterbottom</Last_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#actor2_Film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;actor2_Film1">
+        <Age rdf:datatype="&xsd;int">54</Age>
+        <Last_Name rdf:datatype="&xsd;string">Moresco</Last_Name>
+        <First_Name rdf:datatype="&xsd;string">Robert</First_Name>
+        <playing rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#actor3_Film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;actor3_Film1">
+        <First_Name rdf:datatype="&xsd;string"> Spike</First_Name>
+        <Age rdf:datatype="&xsd;int">65</Age>
+        <Last_Name rdf:datatype="&xsd;string">Lee</Last_Name>
+        <playing rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#film1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;film1">
+        <date rdf:datatype="&xsd;string">12/06/2010</date>
+        <title rdf:datatype="&xsd;string">Walter Hill</title>
+        <Type_Film rdf:datatype="&xsd;string">dramatique</Type_Film>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamed/ontologies/2014/11/untitled-ontology-8#filmMaker1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;filmMaker1">
+        <Age rdf:datatype="&xsd;string">55</Age>
+        <First_Name rdf:datatype="&xsd;string">Angus</First_Name>
+        <Last_Name rdf:datatype="&xsd;string">Macfadyen</Last_Name>
+        <makes rdf:resource="&untitled-ontology-8;film1"/>
+    </owl:NamedIndividual>
+	
+	
+	
+ <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film45">
+ <Age rdf:datatype="&xsd;string">27</Age>
+<Last_Name  rdf:datatype="&xsd;string">by</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string"></First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film45"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film45">
+ <Age rdf:datatype="&xsd;string">271</Age>
+<Last_Name  rdf:datatype="&xsd;string">bygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">ben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film45"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film46">
+ <Age rdf:datatype="&xsd;string">28</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dominique</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ad</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film46"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film46">
+ <Age rdf:datatype="&xsd;string">281</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dominiquegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film46"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film47">
+ <Age rdf:datatype="&xsd;string">29</Age>
+<Last_Name  rdf:datatype="&xsd;string">Maria</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">A</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film47"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film47">
+ <Age rdf:datatype="&xsd;string">291</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mariagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film47"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film48">
+ <Age rdf:datatype="&xsd;string">30</Age>
+<Last_Name  rdf:datatype="&xsd;string">Margot</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abadi</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film48"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film48">
+ <Age rdf:datatype="&xsd;string">301</Age>
+<Last_Name  rdf:datatype="&xsd;string">Margotgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abadiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film48"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film49">
+ <Age rdf:datatype="&xsd;string">31</Age>
+<Last_Name  rdf:datatype="&xsd;string">Silvia</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abascal</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film49"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film49">
+ <Age rdf:datatype="&xsd;string">311</Age>
+<Last_Name  rdf:datatype="&xsd;string">Silviagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abascalben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film49"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film50">
+ <Age rdf:datatype="&xsd;string">32</Age>
+<Last_Name  rdf:datatype="&xsd;string">Diego</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abascal</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film50"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film50">
+ <Age rdf:datatype="&xsd;string">321</Age>
+<Last_Name  rdf:datatype="&xsd;string">Diegogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abascalben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film50"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film51">
+ <Age rdf:datatype="&xsd;string">33</Age>
+<Last_Name  rdf:datatype="&xsd;string">Saïdou</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abatantuono</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film51"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film51">
+ <Age rdf:datatype="&xsd;string">331</Age>
+<Last_Name  rdf:datatype="&xsd;string">Saïdougreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abatantuonoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film51"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film52">
+ <Age rdf:datatype="&xsd;string">34</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hiam</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abatcha</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film52"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film52">
+ <Age rdf:datatype="&xsd;string">341</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hiamgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abatchaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film52"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film53">
+ <Age rdf:datatype="&xsd;string">35</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dino</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abbass</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film53"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film53">
+ <Age rdf:datatype="&xsd;string">351</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dinogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abbassben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film53"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film54">
+ <Age rdf:datatype="&xsd;string">36</Age>
+<Last_Name  rdf:datatype="&xsd;string">Khalid</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abbrescia</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film54"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film54">
+ <Age rdf:datatype="&xsd;string">361</Age>
+<Last_Name  rdf:datatype="&xsd;string">Khalidgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abbresciaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film54"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film55">
+ <Age rdf:datatype="&xsd;string">37</Age>
+<Last_Name  rdf:datatype="&xsd;string">Ilham</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abdalla</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film55"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film55">
+ <Age rdf:datatype="&xsd;string">371</Age>
+<Last_Name  rdf:datatype="&xsd;string">Ilhamgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abdallaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film55"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film56">
+ <Age rdf:datatype="&xsd;string">38</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hijiri</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abdelwahed</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film56"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film56">
+ <Age rdf:datatype="&xsd;string">381</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hijirigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abdelwahedben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film56"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film57">
+ <Age rdf:datatype="&xsd;string">39</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hiroshi</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abe</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film57"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film57">
+ <Age rdf:datatype="&xsd;string">391</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hiroshigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film57"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film58">
+ <Age rdf:datatype="&xsd;string">40</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sadao</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abe</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film58"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film58">
+ <Age rdf:datatype="&xsd;string">401</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sadaogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film58"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film59">
+ <Age rdf:datatype="&xsd;string">41</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mosche</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abe</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film59"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film59">
+ <Age rdf:datatype="&xsd;string">411</Age>
+<Last_Name  rdf:datatype="&xsd;string">Moschegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film59"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film60">
+ <Age rdf:datatype="&xsd;string">42</Age>
+<Last_Name  rdf:datatype="&xsd;string">Yaël</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abebe</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film60"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film60">
+ <Age rdf:datatype="&xsd;string">421</Age>
+<Last_Name  rdf:datatype="&xsd;string">Yaëlgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abebeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film60"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film61">
+ <Age rdf:datatype="&xsd;string">43</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hossein</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abecassis</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film61"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film61">
+ <Age rdf:datatype="&xsd;string">431</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hosseingreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abecassisben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film61"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film62">
+ <Age rdf:datatype="&xsd;string">44</Age>
+<Last_Name  rdf:datatype="&xsd;string">Alfred</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abedini</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film62"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film62">
+ <Age rdf:datatype="&xsd;string">441</Age>
+<Last_Name  rdf:datatype="&xsd;string">Alfredgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abediniben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film62"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film63">
+ <Age rdf:datatype="&xsd;string">45</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dominique</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abel</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film63"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film63">
+ <Age rdf:datatype="&xsd;string">451</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dominiquegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abelben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film63"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film64">
+ <Age rdf:datatype="&xsd;string">46</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lionel</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abel</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film64"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film64">
+ <Age rdf:datatype="&xsd;string">461</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lionelgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abelben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film64"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film65">
+ <Age rdf:datatype="&xsd;string">47</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tim</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abelanski</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film65"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film65">
+ <Age rdf:datatype="&xsd;string">471</Age>
+<Last_Name  rdf:datatype="&xsd;string">Timgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abelanskiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film65"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film66">
+ <Age rdf:datatype="&xsd;string">48</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lewis</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abell</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film66"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film66">
+ <Age rdf:datatype="&xsd;string">481</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lewisgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abellben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film66"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film67">
+ <Age rdf:datatype="&xsd;string">49</Age>
+<Last_Name  rdf:datatype="&xsd;string">Simon</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abernathy</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film67"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film67">
+ <Age rdf:datatype="&xsd;string">491</Age>
+<Last_Name  rdf:datatype="&xsd;string">Simongreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abernathyben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film67"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film68">
+ <Age rdf:datatype="&xsd;string">50</Age>
+<Last_Name  rdf:datatype="&xsd;string">Whitney</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abkarian</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film68"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film68">
+ <Age rdf:datatype="&xsd;string">501</Age>
+<Last_Name  rdf:datatype="&xsd;string">Whitneygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abkarianben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film68"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film69">
+ <Age rdf:datatype="&xsd;string">51</Age>
+<Last_Name  rdf:datatype="&xsd;string">Armand</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Able</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film69"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film69">
+ <Age rdf:datatype="&xsd;string">511</Age>
+<Last_Name  rdf:datatype="&xsd;string">Armandgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ableben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film69"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film70">
+ <Age rdf:datatype="&xsd;string">52</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jon</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abplanalp</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film70"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film70">
+ <Age rdf:datatype="&xsd;string">521</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jongreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abplanalpben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film70"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film71">
+ <Age rdf:datatype="&xsd;string">53</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jean-Pascal</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abrahams</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film71"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film71">
+ <Age rdf:datatype="&xsd;string">531</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jean-Pascalgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abrahamsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film71"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film72">
+ <Age rdf:datatype="&xsd;string">54</Age>
+<Last_Name  rdf:datatype="&xsd;string">Victoria</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abribat</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film72"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film72">
+ <Age rdf:datatype="&xsd;string">541</Age>
+<Last_Name  rdf:datatype="&xsd;string">Victoriagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abribatben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film72"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film73">
+ <Age rdf:datatype="&xsd;string">55</Age>
+<Last_Name  rdf:datatype="&xsd;string">Salvatore</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abril</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film73"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film73">
+ <Age rdf:datatype="&xsd;string">551</Age>
+<Last_Name  rdf:datatype="&xsd;string">Salvatoregreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abrilben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film73"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film74">
+ <Age rdf:datatype="&xsd;string">26</Age>
+<Last_Name  rdf:datatype="&xsd;string">Joe</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abruzzese</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film74"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film74">
+ <Age rdf:datatype="&xsd;string">261</Age>
+<Last_Name  rdf:datatype="&xsd;string">Joegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Abruzzeseben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film74"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film75">
+ <Age rdf:datatype="&xsd;string">27</Age>
+<Last_Name  rdf:datatype="&xsd;string">Candice</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Absolom</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film75"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film75">
+ <Age rdf:datatype="&xsd;string">271</Age>
+<Last_Name  rdf:datatype="&xsd;string">Candicegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Absolomben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film75"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film76">
+ <Age rdf:datatype="&xsd;string">28</Age>
+<Last_Name  rdf:datatype="&xsd;string">Stefano</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Accola</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film76"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film76">
+ <Age rdf:datatype="&xsd;string">281</Age>
+<Last_Name  rdf:datatype="&xsd;string">Stefanogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Accolaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film76"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film77">
+ <Age rdf:datatype="&xsd;string">29</Age>
+<Last_Name  rdf:datatype="&xsd;string">Doria</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Accorsi</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film77"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film77">
+ <Age rdf:datatype="&xsd;string">291</Age>
+<Last_Name  rdf:datatype="&xsd;string">Doriagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Accorsiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film77"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film78">
+ <Age rdf:datatype="&xsd;string">30</Age>
+<Last_Name  rdf:datatype="&xsd;string">Amy</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Achour</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film78"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film78">
+ <Age rdf:datatype="&xsd;string">301</Age>
+<Last_Name  rdf:datatype="&xsd;string">Amygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Achourben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film78"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film79">
+ <Age rdf:datatype="&xsd;string">31</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jensen</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Acker</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film79"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film79">
+ <Age rdf:datatype="&xsd;string">311</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jensengreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ackerben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film79"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film80">
+ <Age rdf:datatype="&xsd;string">32</Age>
+<Last_Name  rdf:datatype="&xsd;string">Leanne</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ackles</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film80"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film80">
+ <Age rdf:datatype="&xsd;string">321</Age>
+<Last_Name  rdf:datatype="&xsd;string">Leannegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Acklesben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film80"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film81">
+ <Age rdf:datatype="&xsd;string">33</Age>
+<Last_Name  rdf:datatype="&xsd;string">Marie-Christine</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adachi</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film81"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film81">
+ <Age rdf:datatype="&xsd;string">331</Age>
+<Last_Name  rdf:datatype="&xsd;string">Marie-Christinegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adachiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film81"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film82">
+ <Age rdf:datatype="&xsd;string">34</Age>
+<Last_Name  rdf:datatype="&xsd;string">Amy</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adam</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film82"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film82">
+ <Age rdf:datatype="&xsd;string">341</Age>
+<Last_Name  rdf:datatype="&xsd;string">Amygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adamben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film82"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film83">
+ <Age rdf:datatype="&xsd;string">35</Age>
+<Last_Name  rdf:datatype="&xsd;string">Kelly</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adams</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film83"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film83">
+ <Age rdf:datatype="&xsd;string">351</Age>
+<Last_Name  rdf:datatype="&xsd;string">Kellygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adamsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film83"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film84">
+ <Age rdf:datatype="&xsd;string">36</Age>
+<Last_Name  rdf:datatype="&xsd;string">Polly</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adams</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film84"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film84">
+ <Age rdf:datatype="&xsd;string">361</Age>
+<Last_Name  rdf:datatype="&xsd;string">Pollygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adamsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film84"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film85">
+ <Age rdf:datatype="&xsd;string">37</Age>
+<Last_Name  rdf:datatype="&xsd;string">Yumi</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adams</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film85"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film85">
+ <Age rdf:datatype="&xsd;string">371</Age>
+<Last_Name  rdf:datatype="&xsd;string">Yumigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adamsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film85"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film86">
+ <Age rdf:datatype="&xsd;string">38</Age>
+<Last_Name  rdf:datatype="&xsd;string">Fabrice</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adashi</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film86"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film86">
+ <Age rdf:datatype="&xsd;string">381</Age>
+<Last_Name  rdf:datatype="&xsd;string">Fabricegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adashiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film86"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film87">
+ <Age rdf:datatype="&xsd;string">39</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mark</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adde</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film87"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film87">
+ <Age rdf:datatype="&xsd;string">391</Age>
+<Last_Name  rdf:datatype="&xsd;string">Markgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Addeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film87"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film88">
+ <Age rdf:datatype="&xsd;string">40</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tunde</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Addy</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film88"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film88">
+ <Age rdf:datatype="&xsd;string">401</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tundegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Addyben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film88"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film89">
+ <Age rdf:datatype="&xsd;string">41</Age>
+<Last_Name  rdf:datatype="&xsd;string">Alexandra</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adebimpe</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film89"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film89">
+ <Age rdf:datatype="&xsd;string">411</Age>
+<Last_Name  rdf:datatype="&xsd;string">Alexandragreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adebimpeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film89"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film90">
+ <Age rdf:datatype="&xsd;string">42</Age>
+<Last_Name  rdf:datatype="&xsd;string">Isabelle</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adi</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film90"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film90">
+ <Age rdf:datatype="&xsd;string">421</Age>
+<Last_Name  rdf:datatype="&xsd;string">Isabellegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film90"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film91">
+ <Age rdf:datatype="&xsd;string">43</Age>
+<Last_Name  rdf:datatype="&xsd;string">Martin</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adjani</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film91"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film91">
+ <Age rdf:datatype="&xsd;string">431</Age>
+<Last_Name  rdf:datatype="&xsd;string">Martingreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adjaniben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film91"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film92">
+ <Age rdf:datatype="&xsd;string">44</Age>
+<Last_Name  rdf:datatype="&xsd;string">Scott</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adjemian</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film92"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film92">
+ <Age rdf:datatype="&xsd;string">441</Age>
+<Last_Name  rdf:datatype="&xsd;string">Scottgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adjemianben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film92"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film93">
+ <Age rdf:datatype="&xsd;string">45</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sarah</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adkins</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film93"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film93">
+ <Age rdf:datatype="&xsd;string">451</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sarahgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adkinsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film93"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film94">
+ <Age rdf:datatype="&xsd;string">46</Age>
+<Last_Name  rdf:datatype="&xsd;string">Friederike</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adler</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film94"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film94">
+ <Age rdf:datatype="&xsd;string">461</Age>
+<Last_Name  rdf:datatype="&xsd;string">Friederikegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adlerben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film94"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film95">
+ <Age rdf:datatype="&xsd;string">47</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mario</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adolph</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film95"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film95">
+ <Age rdf:datatype="&xsd;string">471</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mariogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adolphben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film95"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film96">
+ <Age rdf:datatype="&xsd;string">48</Age>
+<Last_Name  rdf:datatype="&xsd;string">Razaaq</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adorf</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film96"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film96">
+ <Age rdf:datatype="&xsd;string">481</Age>
+<Last_Name  rdf:datatype="&xsd;string">Razaaqgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adorfben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film96"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film97">
+ <Age rdf:datatype="&xsd;string">49</Age>
+<Last_Name  rdf:datatype="&xsd;string">Philippe</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adoti</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film97"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film97">
+ <Age rdf:datatype="&xsd;string">491</Age>
+<Last_Name  rdf:datatype="&xsd;string">Philippegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adotiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film97"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film98">
+ <Age rdf:datatype="&xsd;string">50</Age>
+<Last_Name  rdf:datatype="&xsd;string">Scott</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adrien</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film98"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film98">
+ <Age rdf:datatype="&xsd;string">501</Age>
+<Last_Name  rdf:datatype="&xsd;string">Scottgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adrienben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film98"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film99">
+ <Age rdf:datatype="&xsd;string">51</Age>
+<Last_Name  rdf:datatype="&xsd;string">Frank</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adsit</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film99"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film99">
+ <Age rdf:datatype="&xsd;string">511</Age>
+<Last_Name  rdf:datatype="&xsd;string">Frankgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Adsitben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film99"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film100">
+ <Age rdf:datatype="&xsd;string">52</Age>
+<Last_Name  rdf:datatype="&xsd;string">Kenny</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aendenboom</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film100"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film100">
+ <Age rdf:datatype="&xsd;string">521</Age>
+<Last_Name  rdf:datatype="&xsd;string">Kennygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aendenboomben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film100"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film101">
+ <Age rdf:datatype="&xsd;string">53</Age>
+<Last_Name  rdf:datatype="&xsd;string">Ben</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aernouts</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film101"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film101">
+ <Age rdf:datatype="&xsd;string">531</Age>
+<Last_Name  rdf:datatype="&xsd;string">Bengreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aernoutsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film101"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film102">
+ <Age rdf:datatype="&xsd;string">54</Age>
+<Last_Name  rdf:datatype="&xsd;string">Casey</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Affleck</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film102"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film102">
+ <Age rdf:datatype="&xsd;string">541</Age>
+<Last_Name  rdf:datatype="&xsd;string">Caseygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Affleckben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film102"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film103">
+ <Age rdf:datatype="&xsd;string">55</Age>
+<Last_Name  rdf:datatype="&xsd;string">Moshe</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Affleck</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film103"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film103">
+ <Age rdf:datatype="&xsd;string">551</Age>
+<Last_Name  rdf:datatype="&xsd;string">Moshegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Affleckben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film103"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film104">
+ <Age rdf:datatype="&xsd;string">26</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tetchie</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agazai</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film104"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film104">
+ <Age rdf:datatype="&xsd;string">261</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tetchiegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agazaiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film104"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film105">
+ <Age rdf:datatype="&xsd;string">27</Age>
+<Last_Name  rdf:datatype="&xsd;string">Farzin</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agbayani</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film105"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film105">
+ <Age rdf:datatype="&xsd;string">271</Age>
+<Last_Name  rdf:datatype="&xsd;string">Farzingreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agbayaniben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film105"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film106">
+ <Age rdf:datatype="&xsd;string">28</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hamed</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aghaie</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film106"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film106">
+ <Age rdf:datatype="&xsd;string">281</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hamedgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aghaieben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film106"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film107">
+ <Age rdf:datatype="&xsd;string">29</Age>
+<Last_Name  rdf:datatype="&xsd;string">Shohreh</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aghazi</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film107"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film107">
+ <Age rdf:datatype="&xsd;string">291</Age>
+<Last_Name  rdf:datatype="&xsd;string">Shohrehgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aghaziben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film107"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film108">
+ <Age rdf:datatype="&xsd;string">30</Age>
+<Last_Name  rdf:datatype="&xsd;string">Steve</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aghdashloo</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film108"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film108">
+ <Age rdf:datatype="&xsd;string">301</Age>
+<Last_Name  rdf:datatype="&xsd;string">Stevegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aghdashlooben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film108"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film109">
+ <Age rdf:datatype="&xsd;string">31</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dianna</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agnew</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film109"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film109">
+ <Age rdf:datatype="&xsd;string">311</Age>
+<Last_Name  rdf:datatype="&xsd;string">Diannagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agnewben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film109"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film110">
+ <Age rdf:datatype="&xsd;string">32</Age>
+<Last_Name  rdf:datatype="&xsd;string">Christina</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agron</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film110"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film110">
+ <Age rdf:datatype="&xsd;string">321</Age>
+<Last_Name  rdf:datatype="&xsd;string">Christinagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agronben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film110"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film111">
+ <Age rdf:datatype="&xsd;string">33</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jenny</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aguilera</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film111"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film111">
+ <Age rdf:datatype="&xsd;string">331</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jennygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aguileraben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film111"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film112">
+ <Age rdf:datatype="&xsd;string">34</Age>
+<Last_Name  rdf:datatype="&xsd;string">Börje</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agutter</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film112"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film112">
+ <Age rdf:datatype="&xsd;string">341</Age>
+<Last_Name  rdf:datatype="&xsd;string">Börjegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Agutterben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film112"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film113">
+ <Age rdf:datatype="&xsd;string">35</Age>
+<Last_Name  rdf:datatype="&xsd;string">Shafik</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahlstedt</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film113"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film113">
+ <Age rdf:datatype="&xsd;string">351</Age>
+<Last_Name  rdf:datatype="&xsd;string">Shafikgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahlstedtben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film113"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film114">
+ <Age rdf:datatype="&xsd;string">36</Age>
+<Last_Name  rdf:datatype="&xsd;string">Riz</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahmad</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film114"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film114">
+ <Age rdf:datatype="&xsd;string">361</Age>
+<Last_Name  rdf:datatype="&xsd;string">Rizgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahmadben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film114"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film115">
+ <Age rdf:datatype="&xsd;string">37</Age>
+<Last_Name  rdf:datatype="&xsd;string">Agoumi</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahmed</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film115"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film115">
+ <Age rdf:datatype="&xsd;string">371</Age>
+<Last_Name  rdf:datatype="&xsd;string">Agoumigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahmedben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film115"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film116">
+ <Age rdf:datatype="&xsd;string">38</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sung-Kee</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahmed</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film116"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film116">
+ <Age rdf:datatype="&xsd;string">381</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sung-Keegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahmedben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film116"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film117">
+ <Age rdf:datatype="&xsd;string">39</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jouko</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahn</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film117"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film117">
+ <Age rdf:datatype="&xsd;string">391</Age>
+<Last_Name  rdf:datatype="&xsd;string">Joukogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahnben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film117"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film118">
+ <Age rdf:datatype="&xsd;string">40</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sho</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ahola</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film118"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film118">
+ <Age rdf:datatype="&xsd;string">401</Age>
+<Last_Name  rdf:datatype="&xsd;string">Shogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aholaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film118"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film119">
+ <Age rdf:datatype="&xsd;string">41</Age>
+<Last_Name  rdf:datatype="&xsd;string">Liam</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aikawa</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film119"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film119">
+ <Age rdf:datatype="&xsd;string">411</Age>
+<Last_Name  rdf:datatype="&xsd;string">Liamgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aikawaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film119"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film120">
+ <Age rdf:datatype="&xsd;string">42</Age>
+<Last_Name  rdf:datatype="&xsd;string">Anouk</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aiken</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film120"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film120">
+ <Age rdf:datatype="&xsd;string">421</Age>
+<Last_Name  rdf:datatype="&xsd;string">Anoukgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aikenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film120"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film121">
+ <Age rdf:datatype="&xsd;string">43</Age>
+<Last_Name  rdf:datatype="&xsd;string">Rai</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aimée</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film121"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film121">
+ <Age rdf:datatype="&xsd;string">431</Age>
+<Last_Name  rdf:datatype="&xsd;string">Raigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aiméeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film121"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film122">
+ <Age rdf:datatype="&xsd;string">44</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mania</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aishwarya</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film122"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film122">
+ <Age rdf:datatype="&xsd;string">441</Age>
+<Last_Name  rdf:datatype="&xsd;string">Maniagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aishwaryaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film122"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film123">
+ <Age rdf:datatype="&xsd;string">45</Age>
+<Last_Name  rdf:datatype="&xsd;string">Maryam</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akbari</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film123"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film123">
+ <Age rdf:datatype="&xsd;string">451</Age>
+<Last_Name  rdf:datatype="&xsd;string">Maryamgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akbariben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film123"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film124">
+ <Age rdf:datatype="&xsd;string">46</Age>
+<Last_Name  rdf:datatype="&xsd;string">Abdolreza</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akbari</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film124"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film124">
+ <Age rdf:datatype="&xsd;string">461</Age>
+<Last_Name  rdf:datatype="&xsd;string">Abdolrezagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akbariben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film124"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film125">
+ <Age rdf:datatype="&xsd;string">47</Age>
+<Last_Name  rdf:datatype="&xsd;string">Noël</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akbary</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film125"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film125">
+ <Age rdf:datatype="&xsd;string">471</Age>
+<Last_Name  rdf:datatype="&xsd;string">Noëlgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akbaryben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film125"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film126">
+ <Age rdf:datatype="&xsd;string">48</Age>
+<Last_Name  rdf:datatype="&xsd;string">Malin</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akchote</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film126"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film126">
+ <Age rdf:datatype="&xsd;string">481</Age>
+<Last_Name  rdf:datatype="&xsd;string">Malingreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akchoteben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film126"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film127">
+ <Age rdf:datatype="&xsd;string">49</Age>
+<Last_Name  rdf:datatype="&xsd;string">Shamshad</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akerman</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film127"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film127">
+ <Age rdf:datatype="&xsd;string">491</Age>
+<Last_Name  rdf:datatype="&xsd;string">Shamshadgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akermanben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film127"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film128">
+ <Age rdf:datatype="&xsd;string">50</Age>
+<Last_Name  rdf:datatype="&xsd;string">Cem</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akhtar</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film128"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film128">
+ <Age rdf:datatype="&xsd;string">501</Age>
+<Last_Name  rdf:datatype="&xsd;string">Cemgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akhtarben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film128"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film129">
+ <Age rdf:datatype="&xsd;string">51</Age>
+<Last_Name  rdf:datatype="&xsd;string">Gbenga</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akin</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film129"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film129">
+ <Age rdf:datatype="&xsd;string">511</Age>
+<Last_Name  rdf:datatype="&xsd;string">Gbengagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akinben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film129"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film130">
+ <Age rdf:datatype="&xsd;string">52</Age>
+<Last_Name  rdf:datatype="&xsd;string">Adewale</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akinnagbe</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film130"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film130">
+ <Age rdf:datatype="&xsd;string">521</Age>
+<Last_Name  rdf:datatype="&xsd;string">Adewalegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akinnagbeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film130"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film131">
+ <Age rdf:datatype="&xsd;string">53</Age>
+<Last_Name  rdf:datatype="&xsd;string">Oksana</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akinnuoye-Agbaje</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film131"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film131">
+ <Age rdf:datatype="&xsd;string">531</Age>
+<Last_Name  rdf:datatype="&xsd;string">Oksanagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akinnuoye-Agbajeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film131"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film132">
+ <Age rdf:datatype="&xsd;string">54</Age>
+<Last_Name  rdf:datatype="&xsd;string">Gashey</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akinshina</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film132"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film132">
+ <Age rdf:datatype="&xsd;string">541</Age>
+<Last_Name  rdf:datatype="&xsd;string">Gasheygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Akinshinaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film132"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film133">
+ <Age rdf:datatype="&xsd;string">55</Age>
+<Last_Name  rdf:datatype="&xsd;string">Véronique</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Al</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film133"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film133">
+ <Age rdf:datatype="&xsd;string">551</Age>
+<Last_Name  rdf:datatype="&xsd;string">Véroniquegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film133"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film134">
+ <Age rdf:datatype="&xsd;string">26</Age>
+<Last_Name  rdf:datatype="&xsd;string">Devon</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alain</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film134"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film134">
+ <Age rdf:datatype="&xsd;string">261</Age>
+<Last_Name  rdf:datatype="&xsd;string">Devongreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alainben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film134"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film135">
+ <Age rdf:datatype="&xsd;string">27</Age>
+<Last_Name  rdf:datatype="&xsd;string">Basche</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alan</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film135"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film135">
+ <Age rdf:datatype="&xsd;string">271</Age>
+<Last_Name  rdf:datatype="&xsd;string">Baschegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alanben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film135"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film136">
+ <Age rdf:datatype="&xsd;string">28</Age>
+<Last_Name  rdf:datatype="&xsd;string">Morjana</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alan</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film136"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film136">
+ <Age rdf:datatype="&xsd;string">281</Age>
+<Last_Name  rdf:datatype="&xsd;string">Morjanagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alanben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film136"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film137">
+ <Age rdf:datatype="&xsd;string">29</Age>
+<Last_Name  rdf:datatype="&xsd;string">Carlos</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alaoui</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film137"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film137">
+ <Age rdf:datatype="&xsd;string">291</Age>
+<Last_Name  rdf:datatype="&xsd;string">Carlosgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alaouiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film137"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film138">
+ <Age rdf:datatype="&xsd;string">30</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jessica</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alazraqui</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film138"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film138">
+ <Age rdf:datatype="&xsd;string">301</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jessicagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alazraquiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film138"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film139">
+ <Age rdf:datatype="&xsd;string">31</Age>
+<Last_Name  rdf:datatype="&xsd;string">Helena</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alba</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film139"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film139">
+ <Age rdf:datatype="&xsd;string">311</Age>
+<Last_Name  rdf:datatype="&xsd;string">Helenagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Albaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film139"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film140">
+ <Age rdf:datatype="&xsd;string">32</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jack</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Albergaria</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film140"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film140">
+ <Age rdf:datatype="&xsd;string">321</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jackgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Albergariaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film140"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film141">
+ <Age rdf:datatype="&xsd;string">33</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jens</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Albertson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film141"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film141">
+ <Age rdf:datatype="&xsd;string">331</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jensgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Albertsonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film141"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film142">
+ <Age rdf:datatype="&xsd;string">34</Age>
+<Last_Name  rdf:datatype="&xsd;string">Maria</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Albinus</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film142"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film142">
+ <Age rdf:datatype="&xsd;string">341</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mariagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Albinusben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film142"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film143">
+ <Age rdf:datatype="&xsd;string">35</Age>
+<Last_Name  rdf:datatype="&xsd;string">Alan</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alché</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film143"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film143">
+ <Age rdf:datatype="&xsd;string">351</Age>
+<Last_Name  rdf:datatype="&xsd;string">Alangreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alchében</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film143"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film144">
+ <Age rdf:datatype="&xsd;string">36</Age>
+<Last_Name  rdf:datatype="&xsd;string">Rutyana</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alda</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film144"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film144">
+ <Age rdf:datatype="&xsd;string">361</Age>
+<Last_Name  rdf:datatype="&xsd;string">Rutyanagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aldaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film144"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film145">
+ <Age rdf:datatype="&xsd;string">37</Age>
+<Last_Name  rdf:datatype="&xsd;string">Christophe</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alda</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film145"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film145">
+ <Age rdf:datatype="&xsd;string">371</Age>
+<Last_Name  rdf:datatype="&xsd;string">Christophegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aldaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film145"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film146">
+ <Age rdf:datatype="&xsd;string">38</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jane</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alévêque</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film146"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film146">
+ <Age rdf:datatype="&xsd;string">381</Age>
+<Last_Name  rdf:datatype="&xsd;string">Janegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alévêqueben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film146"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film147">
+ <Age rdf:datatype="&xsd;string">39</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jason</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexander</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film147"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film147">
+ <Age rdf:datatype="&xsd;string">391</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jasongreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexanderben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film147"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film148">
+ <Age rdf:datatype="&xsd;string">40</Age>
+<Last_Name  rdf:datatype="&xsd;string">Josh</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexander</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film148"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film148">
+ <Age rdf:datatype="&xsd;string">401</Age>
+<Last_Name  rdf:datatype="&xsd;string">Joshgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexanderben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film148"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film149">
+ <Age rdf:datatype="&xsd;string">41</Age>
+<Last_Name  rdf:datatype="&xsd;string">Khandi</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexander</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film149"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film149">
+ <Age rdf:datatype="&xsd;string">411</Age>
+<Last_Name  rdf:datatype="&xsd;string">Khandigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexanderben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film149"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film150">
+ <Age rdf:datatype="&xsd;string">42</Age>
+<Last_Name  rdf:datatype="&xsd;string">Terry</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexander</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film150"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film150">
+ <Age rdf:datatype="&xsd;string">421</Age>
+<Last_Name  rdf:datatype="&xsd;string">Terrygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexanderben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film150"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film151">
+ <Age rdf:datatype="&xsd;string">43</Age>
+<Last_Name  rdf:datatype="&xsd;string">Manuel</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexander</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film151"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film151">
+ <Age rdf:datatype="&xsd;string">431</Age>
+<Last_Name  rdf:datatype="&xsd;string">Manuelgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexanderben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film151"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film152">
+ <Age rdf:datatype="&xsd;string">44</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hélène</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexandre</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film152"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film152">
+ <Age rdf:datatype="&xsd;string">441</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hélènegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexandreben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film152"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film153">
+ <Age rdf:datatype="&xsd;string">45</Age>
+<Last_Name  rdf:datatype="&xsd;string">Constantin</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexandridis</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film153"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film153">
+ <Age rdf:datatype="&xsd;string">451</Age>
+<Last_Name  rdf:datatype="&xsd;string">Constantingreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexandridisben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film153"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film154">
+ <Age rdf:datatype="&xsd;string">46</Age>
+<Last_Name  rdf:datatype="&xsd;string">Adam</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexandrov</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film154"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film154">
+ <Age rdf:datatype="&xsd;string">461</Age>
+<Last_Name  rdf:datatype="&xsd;string">Adamgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexandrovben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film154"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film155">
+ <Age rdf:datatype="&xsd;string">47</Age>
+<Last_Name  rdf:datatype="&xsd;string">Marc</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexi-Malle</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film155"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film155">
+ <Age rdf:datatype="&xsd;string">471</Age>
+<Last_Name  rdf:datatype="&xsd;string">Marcgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alexi-Malleben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film155"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film156">
+ <Age rdf:datatype="&xsd;string">48</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hans</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alfos</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film156"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film156">
+ <Age rdf:datatype="&xsd;string">481</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hansgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alfosben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film156"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film157">
+ <Age rdf:datatype="&xsd;string">49</Age>
+<Last_Name  rdf:datatype="&xsd;string">Maiken</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alfredson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film157"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film157">
+ <Age rdf:datatype="&xsd;string">491</Age>
+<Last_Name  rdf:datatype="&xsd;string">Maikengreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alfredsonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film157"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film158">
+ <Age rdf:datatype="&xsd;string">50</Age>
+<Last_Name  rdf:datatype="&xsd;string">Khan</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Algren</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film158"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film158">
+ <Age rdf:datatype="&xsd;string">501</Age>
+<Last_Name  rdf:datatype="&xsd;string">Khangreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Algrenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film158"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film159">
+ <Age rdf:datatype="&xsd;string">51</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hrant</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ali</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film159"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film159">
+ <Age rdf:datatype="&xsd;string">511</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hrantgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aliben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film159"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film160">
+ <Age rdf:datatype="&xsd;string">52</Age>
+<Last_Name  rdf:datatype="&xsd;string">Viviana</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alianak</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film160"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film160">
+ <Age rdf:datatype="&xsd;string">521</Age>
+<Last_Name  rdf:datatype="&xsd;string">Vivianagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alianakben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film160"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film161">
+ <Age rdf:datatype="&xsd;string">53</Age>
+<Last_Name  rdf:datatype="&xsd;string">Abbas</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Aliberti</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film161"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film161">
+ <Age rdf:datatype="&xsd;string">531</Age>
+<Last_Name  rdf:datatype="&xsd;string">Abbasgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alibertiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film161"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film162">
+ <Age rdf:datatype="&xsd;string">54</Age>
+<Last_Name  rdf:datatype="&xsd;string">Opal</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alijome</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film162"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film162">
+ <Age rdf:datatype="&xsd;string">541</Age>
+<Last_Name  rdf:datatype="&xsd;string">Opalgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alijomeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film162"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film163">
+ <Age rdf:datatype="&xsd;string">55</Age>
+<Last_Name  rdf:datatype="&xsd;string">Marie</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alladin</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film163"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film163">
+ <Age rdf:datatype="&xsd;string">551</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mariegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alladinben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film163"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film164">
+ <Age rdf:datatype="&xsd;string">26</Age>
+<Last_Name  rdf:datatype="&xsd;string">Claude</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allan</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film164"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film164">
+ <Age rdf:datatype="&xsd;string">261</Age>
+<Last_Name  rdf:datatype="&xsd;string">Claudegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allanben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film164"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film165">
+ <Age rdf:datatype="&xsd;string">27</Age>
+<Last_Name  rdf:datatype="&xsd;string">Debbie</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allègre</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film165"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film165">
+ <Age rdf:datatype="&xsd;string">271</Age>
+<Last_Name  rdf:datatype="&xsd;string">Debbiegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allègreben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film165"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film166">
+ <Age rdf:datatype="&xsd;string">28</Age>
+<Last_Name  rdf:datatype="&xsd;string">Joan</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film166"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film166">
+ <Age rdf:datatype="&xsd;string">281</Age>
+<Last_Name  rdf:datatype="&xsd;string">Joangreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film166"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film167">
+ <Age rdf:datatype="&xsd;string">29</Age>
+<Last_Name  rdf:datatype="&xsd;string">Karen</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film167"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film167">
+ <Age rdf:datatype="&xsd;string">291</Age>
+<Last_Name  rdf:datatype="&xsd;string">Karengreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film167"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film168">
+ <Age rdf:datatype="&xsd;string">30</Age>
+<Last_Name  rdf:datatype="&xsd;string">Keith</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film168"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film168">
+ <Age rdf:datatype="&xsd;string">301</Age>
+<Last_Name  rdf:datatype="&xsd;string">Keithgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film168"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film169">
+ <Age rdf:datatype="&xsd;string">31</Age>
+<Last_Name  rdf:datatype="&xsd;string">Laura</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film169"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film169">
+ <Age rdf:datatype="&xsd;string">311</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lauragreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film169"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film170">
+ <Age rdf:datatype="&xsd;string">32</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tanya</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film170"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film170">
+ <Age rdf:datatype="&xsd;string">321</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tanyagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film170"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film171">
+ <Age rdf:datatype="&xsd;string">33</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tessa</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film171"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film171">
+ <Age rdf:datatype="&xsd;string">331</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tessagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film171"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film172">
+ <Age rdf:datatype="&xsd;string">34</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tim</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film172"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film172">
+ <Age rdf:datatype="&xsd;string">341</Age>
+<Last_Name  rdf:datatype="&xsd;string">Timgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film172"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film173">
+ <Age rdf:datatype="&xsd;string">35</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tom</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film173"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film173">
+ <Age rdf:datatype="&xsd;string">351</Age>
+<Last_Name  rdf:datatype="&xsd;string">Tomgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film173"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film174">
+ <Age rdf:datatype="&xsd;string">36</Age>
+<Last_Name  rdf:datatype="&xsd;string">Woody</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film174"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film174">
+ <Age rdf:datatype="&xsd;string">361</Age>
+<Last_Name  rdf:datatype="&xsd;string">Woodygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film174"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film175">
+ <Age rdf:datatype="&xsd;string">37</Age>
+<Last_Name  rdf:datatype="&xsd;string">Maureen</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film175"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film175">
+ <Age rdf:datatype="&xsd;string">371</Age>
+<Last_Name  rdf:datatype="&xsd;string">Maureengreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film175"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film176">
+ <Age rdf:datatype="&xsd;string">38</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jim</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allisse</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film176"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film176">
+ <Age rdf:datatype="&xsd;string">381</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jimgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allisseben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film176"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film177">
+ <Age rdf:datatype="&xsd;string">39</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sonia</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allodi</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film177"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film177">
+ <Age rdf:datatype="&xsd;string">391</Age>
+<Last_Name  rdf:datatype="&xsd;string">Soniagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Allodiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film177"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film178">
+ <Age rdf:datatype="&xsd;string">40</Age>
+<Last_Name  rdf:datatype="&xsd;string">Adrian</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Almarcha</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film178"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film178">
+ <Age rdf:datatype="&xsd;string">401</Age>
+<Last_Name  rdf:datatype="&xsd;string">Adriangreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Almarchaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film178"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film179">
+ <Age rdf:datatype="&xsd;string">41</Age>
+<Last_Name  rdf:datatype="&xsd;string">Daniella</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonso</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film179"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film179">
+ <Age rdf:datatype="&xsd;string">411</Age>
+<Last_Name  rdf:datatype="&xsd;string">Daniellagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonsoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film179"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film180">
+ <Age rdf:datatype="&xsd;string">42</Age>
+<Last_Name  rdf:datatype="&xsd;string">Guadalupe</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonso</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film180"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film180">
+ <Age rdf:datatype="&xsd;string">421</Age>
+<Last_Name  rdf:datatype="&xsd;string">Guadalupegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonsoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film180"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film181">
+ <Age rdf:datatype="&xsd;string">43</Age>
+<Last_Name  rdf:datatype="&xsd;string">Casale</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonso</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film181"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film181">
+ <Age rdf:datatype="&xsd;string">431</Age>
+<Last_Name  rdf:datatype="&xsd;string">Casalegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonsoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film181"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film182">
+ <Age rdf:datatype="&xsd;string">44</Age>
+<Last_Name  rdf:datatype="&xsd;string">Kier</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonso</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film182"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film182">
+ <Age rdf:datatype="&xsd;string">441</Age>
+<Last_Name  rdf:datatype="&xsd;string">Kiergreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonsoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film182"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film183">
+ <Age rdf:datatype="&xsd;string">45</Age>
+<Last_Name  rdf:datatype="&xsd;string">Ryan</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonzo</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film183"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film183">
+ <Age rdf:datatype="&xsd;string">451</Age>
+<Last_Name  rdf:datatype="&xsd;string">Ryangreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alonzoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film183"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film184">
+ <Age rdf:datatype="&xsd;string">46</Age>
+<Last_Name  rdf:datatype="&xsd;string">David</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alosio</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film184"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film184">
+ <Age rdf:datatype="&xsd;string">461</Age>
+<Last_Name  rdf:datatype="&xsd;string">Davidgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alosioben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film184"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film185">
+ <Age rdf:datatype="&xsd;string">47</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lewis</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alpay</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film185"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film185">
+ <Age rdf:datatype="&xsd;string">471</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lewisgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alpayben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film185"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film186">
+ <Age rdf:datatype="&xsd;string">48</Age>
+<Last_Name  rdf:datatype="&xsd;string">Bora</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alsamari</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film186"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film186">
+ <Age rdf:datatype="&xsd;string">481</Age>
+<Last_Name  rdf:datatype="&xsd;string">Boragreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alsamariben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film186"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film187">
+ <Age rdf:datatype="&xsd;string">49</Age>
+<Last_Name  rdf:datatype="&xsd;string">Ernesto</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Altas</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film187"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film187">
+ <Age rdf:datatype="&xsd;string">491</Age>
+<Last_Name  rdf:datatype="&xsd;string">Ernestogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Altasben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film187"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film188">
+ <Age rdf:datatype="&xsd;string">50</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hector</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alterio</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film188"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film188">
+ <Age rdf:datatype="&xsd;string">501</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hectorgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alterioben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film188"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film189">
+ <Age rdf:datatype="&xsd;string">51</Age>
+<Last_Name  rdf:datatype="&xsd;string">Bruce</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alterio</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film189"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film189">
+ <Age rdf:datatype="&xsd;string">511</Age>
+<Last_Name  rdf:datatype="&xsd;string">Brucegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alterioben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film189"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film190">
+ <Age rdf:datatype="&xsd;string">52</Age>
+<Last_Name  rdf:datatype="&xsd;string">Harry</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Altman</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film190"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film190">
+ <Age rdf:datatype="&xsd;string">521</Age>
+<Last_Name  rdf:datatype="&xsd;string">Harrygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Altmanben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film190"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film191">
+ <Age rdf:datatype="&xsd;string">53</Age>
+<Last_Name  rdf:datatype="&xsd;string">Robert</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Altman</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film191"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film191">
+ <Age rdf:datatype="&xsd;string">531</Age>
+<Last_Name  rdf:datatype="&xsd;string">Robertgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Altmanben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film191"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film192">
+ <Age rdf:datatype="&xsd;string">54</Age>
+<Last_Name  rdf:datatype="&xsd;string">Trini</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Altman</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film192"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film192">
+ <Age rdf:datatype="&xsd;string">541</Age>
+<Last_Name  rdf:datatype="&xsd;string">Trinigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Altmanben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film192"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film193">
+ <Age rdf:datatype="&xsd;string">55</Age>
+<Last_Name  rdf:datatype="&xsd;string">Shigeru</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alvarado</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film193"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film193">
+ <Age rdf:datatype="&xsd;string">551</Age>
+<Last_Name  rdf:datatype="&xsd;string">Shigerugreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Alvaradoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film193"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film194">
+ <Age rdf:datatype="&xsd;string">26</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mathieu</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amachi</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film194"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film194">
+ <Age rdf:datatype="&xsd;string">261</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mathieugreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amachiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film194"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film195">
+ <Age rdf:datatype="&xsd;string">27</Age>
+<Last_Name  rdf:datatype="&xsd;string">Yuki</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amalric</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film195"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film195">
+ <Age rdf:datatype="&xsd;string">271</Age>
+<Last_Name  rdf:datatype="&xsd;string">Yukigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amalricben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film195"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film196">
+ <Age rdf:datatype="&xsd;string">28</Age>
+<Last_Name  rdf:datatype="&xsd;string">Vincenzo</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amami</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film196"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film196">
+ <Age rdf:datatype="&xsd;string">281</Age>
+<Last_Name  rdf:datatype="&xsd;string">Vincenzogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amamiben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film196"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film197">
+ <Age rdf:datatype="&xsd;string">29</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lys</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amato</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film197"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film197">
+ <Age rdf:datatype="&xsd;string">291</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lysgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amatoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film197"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film198">
+ <Age rdf:datatype="&xsd;string">30</Age>
+<Last_Name  rdf:datatype="&xsd;string">Don</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ambroise</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film198"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film198">
+ <Age rdf:datatype="&xsd;string">301</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dongreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ambroiseben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film198"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film199">
+ <Age rdf:datatype="&xsd;string">31</Age>
+<Last_Name  rdf:datatype="&xsd;string">Paul</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ameche</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film199"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film199">
+ <Age rdf:datatype="&xsd;string">311</Age>
+<Last_Name  rdf:datatype="&xsd;string">Paulgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amecheben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film199"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film200">
+ <Age rdf:datatype="&xsd;string">32</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lara</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">America</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film200"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film200">
+ <Age rdf:datatype="&xsd;string">321</Age>
+<Last_Name  rdf:datatype="&xsd;string">Laragreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Americaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film200"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film201">
+ <Age rdf:datatype="&xsd;string">33</Age>
+<Last_Name  rdf:datatype="&xsd;string">Rabah</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amersey</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film201"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film201">
+ <Age rdf:datatype="&xsd;string">331</Age>
+<Last_Name  rdf:datatype="&xsd;string">Rabahgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amerseyben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film201"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film202">
+ <Age rdf:datatype="&xsd;string">34</Age>
+<Last_Name  rdf:datatype="&xsd;string">Alberto</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ameur-Zaïmeche</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film202"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film202">
+ <Age rdf:datatype="&xsd;string">341</Age>
+<Last_Name  rdf:datatype="&xsd;string">Albertogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ameur-Zaïmecheben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film202"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film203">
+ <Age rdf:datatype="&xsd;string">35</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sandra</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ammann</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film203"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film203">
+ <Age rdf:datatype="&xsd;string">351</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sandragreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ammannben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film203"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film204">
+ <Age rdf:datatype="&xsd;string">36</Age>
+<Last_Name  rdf:datatype="&xsd;string">Henriette</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amodio</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film204"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film204">
+ <Age rdf:datatype="&xsd;string">361</Age>
+<Last_Name  rdf:datatype="&xsd;string">Henriettegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amodioben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film204"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film205">
+ <Age rdf:datatype="&xsd;string">37</Age>
+<Last_Name  rdf:datatype="&xsd;string">John</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">?mon</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film205"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film205">
+ <Age rdf:datatype="&xsd;string">371</Age>
+<Last_Name  rdf:datatype="&xsd;string">Johngreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">?monben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film205"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film206">
+ <Age rdf:datatype="&xsd;string">38</Age>
+<Last_Name  rdf:datatype="&xsd;string">John</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amos</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film206"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film206">
+ <Age rdf:datatype="&xsd;string">381</Age>
+<Last_Name  rdf:datatype="&xsd;string">Johngreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amosben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film206"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film207">
+ <Age rdf:datatype="&xsd;string">39</Age>
+<Last_Name  rdf:datatype="&xsd;string">Reymonde</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amplas</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film207"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film207">
+ <Age rdf:datatype="&xsd;string">391</Age>
+<Last_Name  rdf:datatype="&xsd;string">Reymondegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amplasben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film207"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film208">
+ <Age rdf:datatype="&xsd;string">40</Age>
+<Last_Name  rdf:datatype="&xsd;string">Morey</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amsallem</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film208"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film208">
+ <Age rdf:datatype="&xsd;string">401</Age>
+<Last_Name  rdf:datatype="&xsd;string">Moreygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amsallemben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film208"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film209">
+ <Age rdf:datatype="&xsd;string">41</Age>
+<Last_Name  rdf:datatype="&xsd;string">Roland</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amsterdam</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film209"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film209">
+ <Age rdf:datatype="&xsd;string">411</Age>
+<Last_Name  rdf:datatype="&xsd;string">Rolandgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amsterdamben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film209"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film210">
+ <Age rdf:datatype="&xsd;string">42</Age>
+<Last_Name  rdf:datatype="&xsd;string">Eva</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amstutz</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film210"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film210">
+ <Age rdf:datatype="&xsd;string">421</Age>
+<Last_Name  rdf:datatype="&xsd;string">Evagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amstutzben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film210"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film211">
+ <Age rdf:datatype="&xsd;string">43</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hiroshi</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amurri</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film211"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film211">
+ <Age rdf:datatype="&xsd;string">431</Age>
+<Last_Name  rdf:datatype="&xsd;string">Hiroshigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Amurriben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film211"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film212">
+ <Age rdf:datatype="&xsd;string">44</Age>
+<Last_Name  rdf:datatype="&xsd;string">Elena</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anan</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film212"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film212">
+ <Age rdf:datatype="&xsd;string">441</Age>
+<Last_Name  rdf:datatype="&xsd;string">Elenagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ananben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film212"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film213">
+ <Age rdf:datatype="&xsd;string">45</Age>
+<Last_Name  rdf:datatype="&xsd;string">Richard</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anaya</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film213"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film213">
+ <Age rdf:datatype="&xsd;string">451</Age>
+<Last_Name  rdf:datatype="&xsd;string">Richardgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anayaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film213"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film214">
+ <Age rdf:datatype="&xsd;string">46</Age>
+<Last_Name  rdf:datatype="&xsd;string">Nicole</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anconina</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film214"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film214">
+ <Age rdf:datatype="&xsd;string">461</Age>
+<Last_Name  rdf:datatype="&xsd;string">Nicolegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anconinaben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film214"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film215">
+ <Age rdf:datatype="&xsd;string">47</Age>
+<Last_Name  rdf:datatype="&xsd;string">Bibi</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andenmatten</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film215"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film215">
+ <Age rdf:datatype="&xsd;string">471</Age>
+<Last_Name  rdf:datatype="&xsd;string">Bibigreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andenmattenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film215"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film216">
+ <Age rdf:datatype="&xsd;string">48</Age>
+<Last_Name  rdf:datatype="&xsd;string">Anthony</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersen</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film216"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film216">
+ <Age rdf:datatype="&xsd;string">481</Age>
+<Last_Name  rdf:datatype="&xsd;string">Anthonygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersenben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film216"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film217">
+ <Age rdf:datatype="&xsd;string">49</Age>
+<Last_Name  rdf:datatype="&xsd;string">Gillian</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film217"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film217">
+ <Age rdf:datatype="&xsd;string">491</Age>
+<Last_Name  rdf:datatype="&xsd;string">Gilliangreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film217"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film218">
+ <Age rdf:datatype="&xsd;string">50</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jeff</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film218"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film218">
+ <Age rdf:datatype="&xsd;string">501</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jeffgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film218"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film219">
+ <Age rdf:datatype="&xsd;string">51</Age>
+<Last_Name  rdf:datatype="&xsd;string">Joe</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film219"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film219">
+ <Age rdf:datatype="&xsd;string">511</Age>
+<Last_Name  rdf:datatype="&xsd;string">Joegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film219"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film220">
+ <Age rdf:datatype="&xsd;string">52</Age>
+<Last_Name  rdf:datatype="&xsd;string">Judith</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film220"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film220">
+ <Age rdf:datatype="&xsd;string">521</Age>
+<Last_Name  rdf:datatype="&xsd;string">Judithgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film220"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film221">
+ <Age rdf:datatype="&xsd;string">53</Age>
+<Last_Name  rdf:datatype="&xsd;string">Melody</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film221"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film221">
+ <Age rdf:datatype="&xsd;string">531</Age>
+<Last_Name  rdf:datatype="&xsd;string">Melodygreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film221"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film222">
+ <Age rdf:datatype="&xsd;string">54</Age>
+<Last_Name  rdf:datatype="&xsd;string">Pamela</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film222"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film222">
+ <Age rdf:datatype="&xsd;string">541</Age>
+<Last_Name  rdf:datatype="&xsd;string">Pamelagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film222"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film223">
+ <Age rdf:datatype="&xsd;string">55</Age>
+<Last_Name  rdf:datatype="&xsd;string">Harriet</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film223"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film223">
+ <Age rdf:datatype="&xsd;string">551</Age>
+<Last_Name  rdf:datatype="&xsd;string">Harrietgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film223"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film224">
+ <Age rdf:datatype="&xsd;string">26</Age>
+<Last_Name  rdf:datatype="&xsd;string">Peter</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film224"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film224">
+ <Age rdf:datatype="&xsd;string">261</Age>
+<Last_Name  rdf:datatype="&xsd;string">Petergreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderssonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film224"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film225">
+ <Age rdf:datatype="&xsd;string">27</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sten</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film225"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film225">
+ <Age rdf:datatype="&xsd;string">271</Age>
+<Last_Name  rdf:datatype="&xsd;string">Stengreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderssonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film225"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film226">
+ <Age rdf:datatype="&xsd;string">28</Age>
+<Last_Name  rdf:datatype="&xsd;string">Masanobu</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andersson</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film226"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film226">
+ <Age rdf:datatype="&xsd;string">281</Age>
+<Last_Name  rdf:datatype="&xsd;string">Masanobugreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anderssonben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film226"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film227">
+ <Age rdf:datatype="&xsd;string">29</Age>
+<Last_Name  rdf:datatype="&xsd;string">Leif</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Ando</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film227"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film227">
+ <Age rdf:datatype="&xsd;string">291</Age>
+<Last_Name  rdf:datatype="&xsd;string">Leifgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film227"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film228">
+ <Age rdf:datatype="&xsd;string">30</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mircea</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrée</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film228"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film228">
+ <Age rdf:datatype="&xsd;string">301</Age>
+<Last_Name  rdf:datatype="&xsd;string">Mirceagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andréeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film228"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film229">
+ <Age rdf:datatype="&xsd;string">31</Age>
+<Last_Name  rdf:datatype="&xsd;string">Ursula</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andreescu</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film229"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film229">
+ <Age rdf:datatype="&xsd;string">311</Age>
+<Last_Name  rdf:datatype="&xsd;string">Ursulagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andreescuben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film229"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film230">
+ <Age rdf:datatype="&xsd;string">32</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dana</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andress</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film230"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film230">
+ <Age rdf:datatype="&xsd;string">321</Age>
+<Last_Name  rdf:datatype="&xsd;string">Danagreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andressben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film230"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film231">
+ <Age rdf:datatype="&xsd;string">33</Age>
+<Last_Name  rdf:datatype="&xsd;string">David</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrews</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film231"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film231">
+ <Age rdf:datatype="&xsd;string">331</Age>
+<Last_Name  rdf:datatype="&xsd;string">Davidgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrewsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film231"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film232">
+ <Age rdf:datatype="&xsd;string">34</Age>
+<Last_Name  rdf:datatype="&xsd;string">Dean</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrews</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film232"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film232">
+ <Age rdf:datatype="&xsd;string">341</Age>
+<Last_Name  rdf:datatype="&xsd;string">Deangreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrewsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film232"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film233">
+ <Age rdf:datatype="&xsd;string">35</Age>
+<Last_Name  rdf:datatype="&xsd;string">Edward</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrews</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film233"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film233">
+ <Age rdf:datatype="&xsd;string">351</Age>
+<Last_Name  rdf:datatype="&xsd;string">Edwardgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrewsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film233"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film234">
+ <Age rdf:datatype="&xsd;string">36</Age>
+<Last_Name  rdf:datatype="&xsd;string">Giuseppe</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrews</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film234"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film234">
+ <Age rdf:datatype="&xsd;string">361</Age>
+<Last_Name  rdf:datatype="&xsd;string">Giuseppegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrewsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film234"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film235">
+ <Age rdf:datatype="&xsd;string">37</Age>
+<Last_Name  rdf:datatype="&xsd;string">Julie</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrews</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film235"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film235">
+ <Age rdf:datatype="&xsd;string">371</Age>
+<Last_Name  rdf:datatype="&xsd;string">Juliegreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrewsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film235"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film236">
+ <Age rdf:datatype="&xsd;string">38</Age>
+<Last_Name  rdf:datatype="&xsd;string">Kendra</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrews</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film236"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film236">
+ <Age rdf:datatype="&xsd;string">381</Age>
+<Last_Name  rdf:datatype="&xsd;string">Kendragreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrewsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film236"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film237">
+ <Age rdf:datatype="&xsd;string">39</Age>
+<Last_Name  rdf:datatype="&xsd;string">Naveen</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrews</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film237"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film237">
+ <Age rdf:datatype="&xsd;string">391</Age>
+<Last_Name  rdf:datatype="&xsd;string">Naveengreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrewsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film237"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film238">
+ <Age rdf:datatype="&xsd;string">40</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sebastien</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrews</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film238"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film238">
+ <Age rdf:datatype="&xsd;string">401</Age>
+<Last_Name  rdf:datatype="&xsd;string">Sebastiengreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrewsben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film238"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film239">
+ <Age rdf:datatype="&xsd;string">41</Age>
+<Last_Name  rdf:datatype="&xsd;string">(FRA)</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrieu</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film239"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film239">
+ <Age rdf:datatype="&xsd;string">411</Age>
+<Last_Name  rdf:datatype="&xsd;string">(FRA)greg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Andrieuben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film239"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film240">
+ <Age rdf:datatype="&xsd;string">42</Age>
+<Last_Name  rdf:datatype="&xsd;string">Michael</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anémone</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film240"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film240">
+ <Age rdf:datatype="&xsd;string">421</Age>
+<Last_Name  rdf:datatype="&xsd;string">Michaelgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anémoneben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film240"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film241">
+ <Age rdf:datatype="&xsd;string">43</Age>
+<Last_Name  rdf:datatype="&xsd;string">Laura</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Angarano</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film241"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film241">
+ <Age rdf:datatype="&xsd;string">431</Age>
+<Last_Name  rdf:datatype="&xsd;string">Lauragreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Angaranoben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film241"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film242">
+ <Age rdf:datatype="&xsd;string">44</Age>
+<Last_Name  rdf:datatype="&xsd;string">Moro</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Angel</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film242"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film242">
+ <Age rdf:datatype="&xsd;string">441</Age>
+<Last_Name  rdf:datatype="&xsd;string">Morogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Angelben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film242"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film243">
+ <Age rdf:datatype="&xsd;string">45</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jean-Hugues</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anghileri</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film243"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film243">
+ <Age rdf:datatype="&xsd;string">451</Age>
+<Last_Name  rdf:datatype="&xsd;string">Jean-Huguesgreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anghileriben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film243"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film244">
+ <Age rdf:datatype="&xsd;string">46</Age>
+<Last_Name  rdf:datatype="&xsd;string">Franco</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Anglade</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film244"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="&untitled-ontology-8;Actor_Film244">
+ <Age rdf:datatype="&xsd;string">461</Age>
+<Last_Name  rdf:datatype="&xsd;string">Francogreg</Last_Name > 
+ <First_Name rdf:datatype="&xsd;string">Angladeben</First_Name>
+  <playing rdf:resource="&untitled-ontology-8;film244"/>
+</owl:NamedIndividual>
+
+
+<Film rdf:about="&untitled-ontology-8;Film45">
+<date rdf:datatype="&xsd;string">1820</date >
+ <title rdf:datatype="&xsd;string">A Few Good Men</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film46">
+<date rdf:datatype="&xsd;string">1821</date >
+ <title rdf:datatype="&xsd;string">Empire Records</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film47">
+<date rdf:datatype="&xsd;string">1822</date >
+ <title rdf:datatype="&xsd;string">Rome</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film48">
+<date rdf:datatype="&xsd;string">1823</date >
+ <title rdf:datatype="&xsd;string">Witness for the Prosecution</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film49">
+<date rdf:datatype="&xsd;string">1824</date >
+ <title rdf:datatype="&xsd;string">Girl, Interrupted</title>
+  <Type_Film rdf:datatype="&xsd;string">Biography</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film50">
+<date rdf:datatype="&xsd;string">1825</date >
+ <title rdf:datatype="&xsd;string">Ong-bak</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film51">
+<date rdf:datatype="&xsd;string">1826</date >
+ <title rdf:datatype="&xsd;string">The Lookout</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film52">
+<date rdf:datatype="&xsd;string">1827</date >
+ <title rdf:datatype="&xsd;string">Unfaithful</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film53">
+<date rdf:datatype="&xsd;string">1828</date >
+ <title rdf:datatype="&xsd;string">The Limey</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film54">
+<date rdf:datatype="&xsd;string">1829</date >
+ <title rdf:datatype="&xsd;string">Fever Pitch</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film55">
+<date rdf:datatype="&xsd;string">1830</date >
+ <title rdf:datatype="&xsd;string">Star Trek</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film56">
+<date rdf:datatype="&xsd;string">1831</date >
+ <title rdf:datatype="&xsd;string">Outlander</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film57">
+<date rdf:datatype="&xsd;string">1832</date >
+ <title rdf:datatype="&xsd;string">Pathfinder</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film58">
+<date rdf:datatype="&xsd;string">1833</date >
+ <title rdf:datatype="&xsd;string">The Covenant</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film59">
+<date rdf:datatype="&xsd;string">1834</date >
+ <title rdf:datatype="&xsd;string">Universal Soldier</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film60">
+<date rdf:datatype="&xsd;string">1835</date >
+ <title rdf:datatype="&xsd;string">Breaking the Waves</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film61">
+<date rdf:datatype="&xsd;string">1836</date >
+ <title rdf:datatype="&xsd;string">The Producers</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film62">
+<date rdf:datatype="&xsd;string">1837</date >
+ <title rdf:datatype="&xsd;string">The Grapes of Wrath</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film63">
+<date rdf:datatype="&xsd;string">1838</date >
+ <title rdf:datatype="&xsd;string">Femme Fatale</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film64">
+<date rdf:datatype="&xsd;string">1839</date >
+ <title rdf:datatype="&xsd;string">Two for the Money</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film65">
+<date rdf:datatype="&xsd;string">1840</date >
+ <title rdf:datatype="&xsd;string">Just Like Heaven</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film66">
+<date rdf:datatype="&xsd;string">1841</date >
+ <title rdf:datatype="&xsd;string">Oldeuboi</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film67">
+<date rdf:datatype="&xsd;string">1842</date >
+ <title rdf:datatype="&xsd;string">Cannibal Holocaust</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film68">
+<date rdf:datatype="&xsd;string">1843</date >
+ <title rdf:datatype="&xsd;string">BrÃ¼no</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film69">
+<date rdf:datatype="&xsd;string">1844</date >
+ <title rdf:datatype="&xsd;string">Summer of Sam</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film70">
+<date rdf:datatype="&xsd;string">1845</date >
+ <title rdf:datatype="&xsd;string">Pirates of the Caribbean: At World's End</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film71">
+<date rdf:datatype="&xsd;string">1846</date >
+ <title rdf:datatype="&xsd;string">The Graduate</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film72">
+<date rdf:datatype="&xsd;string">1847</date >
+ <title rdf:datatype="&xsd;string">The Rocketeer</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film73">
+<date rdf:datatype="&xsd;string">1848</date >
+ <title rdf:datatype="&xsd;string">Chaplin</title>
+  <Type_Film rdf:datatype="&xsd;string">Biography</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film74">
+<date rdf:datatype="&xsd;string">1849</date >
+ <title rdf:datatype="&xsd;string">The Legend of Zorro</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film75">
+<date rdf:datatype="&xsd;string">1850</date >
+ <title rdf:datatype="&xsd;string">Rounders</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film76">
+<date rdf:datatype="&xsd;string">1851</date >
+ <title rdf:datatype="&xsd;string">Mercury Rising</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film77">
+<date rdf:datatype="&xsd;string">1852</date >
+ <title rdf:datatype="&xsd;string">Contact</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film78">
+<date rdf:datatype="&xsd;string">1853</date >
+ <title rdf:datatype="&xsd;string">Jurassic Park III</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film79">
+<date rdf:datatype="&xsd;string">1854</date >
+ <title rdf:datatype="&xsd;string">AVP: Alien vs</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film80">
+<date rdf:datatype="&xsd;string">1855</date >
+ <title rdf:datatype="&xsd;string">Before the Devil Knows You're Dead</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film81">
+<date rdf:datatype="&xsd;string">1856</date >
+ <title rdf:datatype="&xsd;string">Tsotsi</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film82">
+<date rdf:datatype="&xsd;string">1857</date >
+ <title rdf:datatype="&xsd;string">BloodRayne</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film83">
+<date rdf:datatype="&xsd;string">1858</date >
+ <title rdf:datatype="&xsd;string">Black Sheep</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film84">
+<date rdf:datatype="&xsd;string">1859</date >
+ <title rdf:datatype="&xsd;string">Scary Movie</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film85">
+<date rdf:datatype="&xsd;string">1860</date >
+ <title rdf:datatype="&xsd;string">Once Upon a Time in Mexico</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film86">
+<date rdf:datatype="&xsd;string">1861</date >
+ <title rdf:datatype="&xsd;string">Following</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film87">
+<date rdf:datatype="&xsd;string">1862</date >
+ <title rdf:datatype="&xsd;string">Alias</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film88">
+<date rdf:datatype="&xsd;string">1863</date >
+ <title rdf:datatype="&xsd;string">Hairspray</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film89">
+<date rdf:datatype="&xsd;string">1864</date >
+ <title rdf:datatype="&xsd;string">Touch of Evil</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film90">
+<date rdf:datatype="&xsd;string">1865</date >
+ <title rdf:datatype="&xsd;string">So I Married an Axe Murderer</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film91">
+<date rdf:datatype="&xsd;string">1866</date >
+ <title rdf:datatype="&xsd;string">White Noise</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film92">
+<date rdf:datatype="&xsd;string">1867</date >
+ <title rdf:datatype="&xsd;string">Anything Else</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film93">
+<date rdf:datatype="&xsd;string">1868</date >
+ <title rdf:datatype="&xsd;string">Batman: Mask of the Phantasm</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film94">
+<date rdf:datatype="&xsd;string">1869</date >
+ <title rdf:datatype="&xsd;string">Sweeney Todd: The Demon Barber of Fleet Street</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film95">
+<date rdf:datatype="&xsd;string">1870</date >
+ <title rdf:datatype="&xsd;string">The Hurt Locker</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film96">
+<date rdf:datatype="&xsd;string">1871</date >
+ <title rdf:datatype="&xsd;string">War</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film97">
+<date rdf:datatype="&xsd;string">1872</date >
+ <title rdf:datatype="&xsd;string">Stick It</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film98">
+<date rdf:datatype="&xsd;string">1873</date >
+ <title rdf:datatype="&xsd;string">Virtuosity</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film99">
+<date rdf:datatype="&xsd;string">1874</date >
+ <title rdf:datatype="&xsd;string">Gomorra</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film100">
+<date rdf:datatype="&xsd;string">1875</date >
+ <title rdf:datatype="&xsd;string">Everybody's Fine</title>
+  <Type_Film rdf:datatype="&xsd;string">Biography</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film101">
+<date rdf:datatype="&xsd;string">1876</date >
+ <title rdf:datatype="&xsd;string">My Big Fat Greek Wedding</title>
+  <Type_Film rdf:datatype="&xsd;string">Horror</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film102">
+<date rdf:datatype="&xsd;string">1877</date >
+ <title rdf:datatype="&xsd;string">Barbershop</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film103">
+<date rdf:datatype="&xsd;string">1878</date >
+ <title rdf:datatype="&xsd;string">Bugsy</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film104">
+<date rdf:datatype="&xsd;string">1879</date >
+ <title rdf:datatype="&xsd;string">Poltergeist</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film105">
+<date rdf:datatype="&xsd;string">1880</date >
+ <title rdf:datatype="&xsd;string">Highlander</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film106">
+<date rdf:datatype="&xsd;string">1881</date >
+ <title rdf:datatype="&xsd;string">The Opposite of Sex</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film107">
+<date rdf:datatype="&xsd;string">1882</date >
+ <title rdf:datatype="&xsd;string">The Office</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film108">
+<date rdf:datatype="&xsd;string">1883</date >
+ <title rdf:datatype="&xsd;string">New Jack City</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film109">
+<date rdf:datatype="&xsd;string">1884</date >
+ <title rdf:datatype="&xsd;string">French Kiss</title>
+  <Type_Film rdf:datatype="&xsd;string">Horror</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film110">
+<date rdf:datatype="&xsd;string">1885</date >
+ <title rdf:datatype="&xsd;string">Instinct</title>
+  <Type_Film rdf:datatype="&xsd;string">Thriller</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film111">
+<date rdf:datatype="&xsd;string">1886</date >
+ <title rdf:datatype="&xsd;string">Le samouraÃ¯</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film112">
+<date rdf:datatype="&xsd;string">1887</date >
+ <title rdf:datatype="&xsd;string">Derailed</title>
+  <Type_Film rdf:datatype="&xsd;string">Fantasy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film113">
+<date rdf:datatype="&xsd;string">1888</date >
+ <title rdf:datatype="&xsd;string">Cube</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film114">
+<date rdf:datatype="&xsd;string">1889</date >
+ <title rdf:datatype="&xsd;string">High Plains Drifter</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film115">
+<date rdf:datatype="&xsd;string">1890</date >
+ <title rdf:datatype="&xsd;string">Enemy at the Gates</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film116">
+<date rdf:datatype="&xsd;string">1891</date >
+ <title rdf:datatype="&xsd;string">Nosferatu, eine Symphonie des Grauens</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film117">
+<date rdf:datatype="&xsd;string">1892</date >
+ <title rdf:datatype="&xsd;string">Sherlock Holmes</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film118">
+<date rdf:datatype="&xsd;string">1893</date >
+ <title rdf:datatype="&xsd;string">We Were Soldiers</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film119">
+<date rdf:datatype="&xsd;string">1894</date >
+ <title rdf:datatype="&xsd;string">Elegy</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film120">
+<date rdf:datatype="&xsd;string">1895</date >
+ <title rdf:datatype="&xsd;string">Taegukgi hwinalrimyeo</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film121">
+<date rdf:datatype="&xsd;string">1896</date >
+ <title rdf:datatype="&xsd;string">Jay and Silent Bob Strike Back</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film122">
+<date rdf:datatype="&xsd;string">1897</date >
+ <title rdf:datatype="&xsd;string">The Karate Kid, Part III</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film123">
+<date rdf:datatype="&xsd;string">1898</date >
+ <title rdf:datatype="&xsd;string">Mean Streets</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film124">
+<date rdf:datatype="&xsd;string">1899</date >
+ <title rdf:datatype="&xsd;string">Inkheart</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film125">
+<date rdf:datatype="&xsd;string">1900</date >
+ <title rdf:datatype="&xsd;string">Desperado</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film126">
+<date rdf:datatype="&xsd;string">1901</date >
+ <title rdf:datatype="&xsd;string">Appaloosa</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film127">
+<date rdf:datatype="&xsd;string">1902</date >
+ <title rdf:datatype="&xsd;string">The Thin Red Line</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film128">
+<date rdf:datatype="&xsd;string">1903</date >
+ <title rdf:datatype="&xsd;string">Death Proof</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film129">
+<date rdf:datatype="&xsd;string">1904</date >
+ <title rdf:datatype="&xsd;string">Swingers</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film130">
+<date rdf:datatype="&xsd;string">1905</date >
+ <title rdf:datatype="&xsd;string">Titan A</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film131">
+<date rdf:datatype="&xsd;string">1906</date >
+ <title rdf:datatype="&xsd;string">Dead Poets Society</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film132">
+<date rdf:datatype="&xsd;string">1907</date >
+ <title rdf:datatype="&xsd;string">Kagemusha</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film133">
+<date rdf:datatype="&xsd;string">1908</date >
+ <title rdf:datatype="&xsd;string">The Mission</title>
+  <Type_Film rdf:datatype="&xsd;string">Animation</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film134">
+<date rdf:datatype="&xsd;string">1909</date >
+ <title rdf:datatype="&xsd;string">Ultimo tango a Parigi</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film135">
+<date rdf:datatype="&xsd;string">1910</date >
+ <title rdf:datatype="&xsd;string">The Savages</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film136">
+<date rdf:datatype="&xsd;string">1911</date >
+ <title rdf:datatype="&xsd;string">Beethoven</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film137">
+<date rdf:datatype="&xsd;string">1912</date >
+ <title rdf:datatype="&xsd;string">John Tucker Must Die</title>
+  <Type_Film rdf:datatype="&xsd;string">Documentary</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film138">
+<date rdf:datatype="&xsd;string">1913</date >
+ <title rdf:datatype="&xsd;string">Ice Age</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film139">
+<date rdf:datatype="&xsd;string">1914</date >
+ <title rdf:datatype="&xsd;string">Corpse Bride</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film140">
+<date rdf:datatype="&xsd;string">1915</date >
+ <title rdf:datatype="&xsd;string">Fido</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film141">
+<date rdf:datatype="&xsd;string">1916</date >
+ <title rdf:datatype="&xsd;string">Dan in Real Life</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film142">
+<date rdf:datatype="&xsd;string">1917</date >
+ <title rdf:datatype="&xsd;string">Boogie Nights</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film143">
+<date rdf:datatype="&xsd;string">1918</date >
+ <title rdf:datatype="&xsd;string">Roger  Me</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film144">
+<date rdf:datatype="&xsd;string">1919</date >
+ <title rdf:datatype="&xsd;string">Nothing But the Truth</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film145">
+<date rdf:datatype="&xsd;string">1920</date >
+ <title rdf:datatype="&xsd;string">United </title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film146">
+<date rdf:datatype="&xsd;string">1921</date >
+ <title rdf:datatype="&xsd;string">The Poseidon Adventure</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film147">
+<date rdf:datatype="&xsd;string">1922</date >
+ <title rdf:datatype="&xsd;string">Kate  Leopold</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film148">
+<date rdf:datatype="&xsd;string">1923</date >
+ <title rdf:datatype="&xsd;string">Timeline</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film149">
+<date rdf:datatype="&xsd;string">1924</date >
+ <title rdf:datatype="&xsd;string">Little Nicky</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film150">
+<date rdf:datatype="&xsd;string">1925</date >
+ <title rdf:datatype="&xsd;string">Reign of Fire</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film151">
+<date rdf:datatype="&xsd;string">1926</date >
+ <title rdf:datatype="&xsd;string">Backdraft</title>
+  <Type_Film rdf:datatype="&xsd;string">Horror</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film152">
+<date rdf:datatype="&xsd;string">1927</date >
+ <title rdf:datatype="&xsd;string">Apollo </title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film153">
+<date rdf:datatype="&xsd;string">1928</date >
+ <title rdf:datatype="&xsd;string">The Mask</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film154">
+<date rdf:datatype="&xsd;string">1929</date >
+ <title rdf:datatype="&xsd;string">Gallipoli</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film155">
+<date rdf:datatype="&xsd;string">1930</date >
+ <title rdf:datatype="&xsd;string">The Omega Man</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film156">
+<date rdf:datatype="&xsd;string">1931</date >
+ <title rdf:datatype="&xsd;string">The Quick and the Dead</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film157">
+<date rdf:datatype="&xsd;string">1932</date >
+ <title rdf:datatype="&xsd;string">Candyman</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film158">
+<date rdf:datatype="&xsd;string">1933</date >
+ <title rdf:datatype="&xsd;string">The Emperor's New Groove</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film159">
+<date rdf:datatype="&xsd;string">1934</date >
+ <title rdf:datatype="&xsd;string">Mr</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film160">
+<date rdf:datatype="&xsd;string">1935</date >
+ <title rdf:datatype="&xsd;string">Armageddon</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film161">
+<date rdf:datatype="&xsd;string">1936</date >
+ <title rdf:datatype="&xsd;string">One Night at McCool's</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film162">
+<date rdf:datatype="&xsd;string">1937</date >
+ <title rdf:datatype="&xsd;string">Elf</title>
+  <Type_Film rdf:datatype="&xsd;string">Horror</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film163">
+<date rdf:datatype="&xsd;string">1938</date >
+ <title rdf:datatype="&xsd;string">Miracle on th Street</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film164">
+<date rdf:datatype="&xsd;string">1939</date >
+ <title rdf:datatype="&xsd;string">Blast from the Past</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film165">
+<date rdf:datatype="&xsd;string">1940</date >
+ <title rdf:datatype="&xsd;string">Blade Runner</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film166">
+<date rdf:datatype="&xsd;string">1941</date >
+ <title rdf:datatype="&xsd;string">Passenger </title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film167">
+<date rdf:datatype="&xsd;string">1942</date >
+ <title rdf:datatype="&xsd;string">The Mechanic</title>
+  <Type_Film rdf:datatype="&xsd;string">Fantasy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film168">
+<date rdf:datatype="&xsd;string">1943</date >
+ <title rdf:datatype="&xsd;string">Masters of the Universe</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film169">
+<date rdf:datatype="&xsd;string">1944</date >
+ <title rdf:datatype="&xsd;string">Tigerland</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film170">
+<date rdf:datatype="&xsd;string">1945</date >
+ <title rdf:datatype="&xsd;string">Ju-on</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film171">
+<date rdf:datatype="&xsd;string">1946</date >
+ <title rdf:datatype="&xsd;string">Now and Then</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film172">
+<date rdf:datatype="&xsd;string">1947</date >
+ <title rdf:datatype="&xsd;string">The Dark Knight</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film173">
+<date rdf:datatype="&xsd;string">1948</date >
+ <title rdf:datatype="&xsd;string">The Simpsons Movie</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film174">
+<date rdf:datatype="&xsd;string">1949</date >
+ <title rdf:datatype="&xsd;string">The Firm</title>
+  <Type_Film rdf:datatype="&xsd;string">Horror</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film175">
+<date rdf:datatype="&xsd;string">1950</date >
+ <title rdf:datatype="&xsd;string">Freddy's Dead: The Final Nightmare</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film176">
+<date rdf:datatype="&xsd;string">1951</date >
+ <title rdf:datatype="&xsd;string">Guess Who's Coming to Dinner</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film177">
+<date rdf:datatype="&xsd;string">1952</date >
+ <title rdf:datatype="&xsd;string">Star Trek</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film178">
+<date rdf:datatype="&xsd;string">1953</date >
+ <title rdf:datatype="&xsd;string">Clue</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film179">
+<date rdf:datatype="&xsd;string">1954</date >
+ <title rdf:datatype="&xsd;string">Le dÃ®ner de cons</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film180">
+<date rdf:datatype="&xsd;string">1955</date >
+ <title rdf:datatype="&xsd;string">Boy A</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film181">
+<date rdf:datatype="&xsd;string">1956</date >
+ <title rdf:datatype="&xsd;string">The Aristocrats</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film182">
+<date rdf:datatype="&xsd;string">1957</date >
+ <title rdf:datatype="&xsd;string">Vampire Hunter D: Bloodlust</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film183">
+<date rdf:datatype="&xsd;string">1958</date >
+ <title rdf:datatype="&xsd;string"> Days of Night</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film184">
+<date rdf:datatype="&xsd;string">1959</date >
+ <title rdf:datatype="&xsd;string">Johnny English</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film185">
+<date rdf:datatype="&xsd;string">1960</date >
+ <title rdf:datatype="&xsd;string">Punisher: War Zone</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film186">
+<date rdf:datatype="&xsd;string">1961</date >
+ <title rdf:datatype="&xsd;string">Miss Congeniality : Armed  Fabulous</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film187">
+<date rdf:datatype="&xsd;string">1962</date >
+ <title rdf:datatype="&xsd;string">Ghost Dog: The Way of the Samurai</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film188">
+<date rdf:datatype="&xsd;string">1963</date >
+ <title rdf:datatype="&xsd;string">Fast Food Nation</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film189">
+<date rdf:datatype="&xsd;string">1964</date >
+ <title rdf:datatype="&xsd;string">Army of Darkness</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film190">
+<date rdf:datatype="&xsd;string">1965</date >
+ <title rdf:datatype="&xsd;string">Sydney White</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film191">
+<date rdf:datatype="&xsd;string">1966</date >
+ <title rdf:datatype="&xsd;string">Fitzcarraldo</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film192">
+<date rdf:datatype="&xsd;string">1967</date >
+ <title rdf:datatype="&xsd;string">Flubber</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film193">
+<date rdf:datatype="&xsd;string">1968</date >
+ <title rdf:datatype="&xsd;string">Angels in America</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film194">
+<date rdf:datatype="&xsd;string">1969</date >
+ <title rdf:datatype="&xsd;string">Awake</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film195">
+<date rdf:datatype="&xsd;string">1970</date >
+ <title rdf:datatype="&xsd;string">The Adventures of Rocky  Bullwinkle</title>
+  <Type_Film rdf:datatype="&xsd;string">Horror</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film196">
+<date rdf:datatype="&xsd;string">1971</date >
+ <title rdf:datatype="&xsd;string">Idi i smotri</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film197">
+<date rdf:datatype="&xsd;string">1972</date >
+ <title rdf:datatype="&xsd;string">Shadow of the Vampire</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film198">
+<date rdf:datatype="&xsd;string">1973</date >
+ <title rdf:datatype="&xsd;string">The Haunted Mansion</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film199">
+<date rdf:datatype="&xsd;string">1974</date >
+ <title rdf:datatype="&xsd;string">Big Daddy</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film200">
+<date rdf:datatype="&xsd;string">1975</date >
+ <title rdf:datatype="&xsd;string">The River Wild</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film201">
+<date rdf:datatype="&xsd;string">1976</date >
+ <title rdf:datatype="&xsd;string">Collateral Damage</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film202">
+<date rdf:datatype="&xsd;string">1977</date >
+ <title rdf:datatype="&xsd;string">Little Shop of Horrors</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film203">
+<date rdf:datatype="&xsd;string">1978</date >
+ <title rdf:datatype="&xsd;string">Eskiya</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film204">
+<date rdf:datatype="&xsd;string">1979</date >
+ <title rdf:datatype="&xsd;string">East of Eden</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film205">
+<date rdf:datatype="&xsd;string">1980</date >
+ <title rdf:datatype="&xsd;string">Urban Legend</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film206">
+<date rdf:datatype="&xsd;string">1981</date >
+ <title rdf:datatype="&xsd;string">Ace Ventura: Pet Detective</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film207">
+<date rdf:datatype="&xsd;string">1982</date >
+ <title rdf:datatype="&xsd;string">May</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film208">
+<date rdf:datatype="&xsd;string">1983</date >
+ <title rdf:datatype="&xsd;string">Goal!</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film209">
+<date rdf:datatype="&xsd;string">1984</date >
+ <title rdf:datatype="&xsd;string">Star Trek: The Next Generation</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film210">
+<date rdf:datatype="&xsd;string">1985</date >
+ <title rdf:datatype="&xsd;string">This Is Spinal Tap</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film211">
+<date rdf:datatype="&xsd;string">1986</date >
+ <title rdf:datatype="&xsd;string">Elephant</title>
+  <Type_Film rdf:datatype="&xsd;string">Biography</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film212">
+<date rdf:datatype="&xsd;string">1987</date >
+ <title rdf:datatype="&xsd;string">Loser</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film213">
+<date rdf:datatype="&xsd;string">1988</date >
+ <title rdf:datatype="&xsd;string">Jesus Christ Superstar</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film214">
+<date rdf:datatype="&xsd;string">1989</date >
+ <title rdf:datatype="&xsd;string">American Pie Presents Beta House</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film215">
+<date rdf:datatype="&xsd;string">1990</date >
+ <title rdf:datatype="&xsd;string">The Amityville Horror</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film216">
+<date rdf:datatype="&xsd;string">1991</date >
+ <title rdf:datatype="&xsd;string">Laura</title>
+  <Type_Film rdf:datatype="&xsd;string">Animation</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film217">
+<date rdf:datatype="&xsd;string">1992</date >
+ <title rdf:datatype="&xsd;string">American Gangster</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film218">
+<date rdf:datatype="&xsd;string">1993</date >
+ <title rdf:datatype="&xsd;string">The War of the Roses</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film219">
+<date rdf:datatype="&xsd;string">1994</date >
+ <title rdf:datatype="&xsd;string">Murder by Numbers</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film220">
+<date rdf:datatype="&xsd;string">1995</date >
+ <title rdf:datatype="&xsd;string">The Nanny Diaries</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film221">
+<date rdf:datatype="&xsd;string">1996</date >
+ <title rdf:datatype="&xsd;string">Patch Adams</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film222">
+<date rdf:datatype="&xsd;string">1997</date >
+ <title rdf:datatype="&xsd;string">Casino Royale</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film223">
+<date rdf:datatype="&xsd;string">1998</date >
+ <title rdf:datatype="&xsd;string">Deadwood</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film224">
+<date rdf:datatype="&xsd;string">1999</date >
+ <title rdf:datatype="&xsd;string">Don't Look Now</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film225">
+<date rdf:datatype="&xsd;string">2000</date >
+ <title rdf:datatype="&xsd;string">Hancock</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film226">
+<date rdf:datatype="&xsd;string">2001</date >
+ <title rdf:datatype="&xsd;string">Bambi</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film227">
+<date rdf:datatype="&xsd;string">2002</date >
+ <title rdf:datatype="&xsd;string">Conan the Barbarian</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film228">
+<date rdf:datatype="&xsd;string">2003</date >
+ <title rdf:datatype="&xsd;string">Green Card</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film229">
+<date rdf:datatype="&xsd;string">2004</date >
+ <title rdf:datatype="&xsd;string">Friday Night Lights</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film230">
+<date rdf:datatype="&xsd;string">2005</date >
+ <title rdf:datatype="&xsd;string">The Invasion</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film231">
+<date rdf:datatype="&xsd;string">2006</date >
+ <title rdf:datatype="&xsd;string">Turner  Hooch</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film232">
+<date rdf:datatype="&xsd;string">2007</date >
+ <title rdf:datatype="&xsd;string">The Bridge on the River Kwai</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film233">
+<date rdf:datatype="&xsd;string">2008</date >
+ <title rdf:datatype="&xsd;string">The Philadelphia Story</title>
+  <Type_Film rdf:datatype="&xsd;string">Biography</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film234">
+<date rdf:datatype="&xsd;string">2009</date >
+ <title rdf:datatype="&xsd;string">Little Fockers</title>
+  <Type_Film rdf:datatype="&xsd;string">Adventure</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film235">
+<date rdf:datatype="&xsd;string">2010</date >
+ <title rdf:datatype="&xsd;string">Dangerous Liaisons</title>
+  <Type_Film rdf:datatype="&xsd;string">Action</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film236">
+<date rdf:datatype="&xsd;string">2011</date >
+ <title rdf:datatype="&xsd;string">Wrong Turn : Dead End</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film237">
+<date rdf:datatype="&xsd;string">2012</date >
+ <title rdf:datatype="&xsd;string">Artificial Intelligence: AI</title>
+  <Type_Film rdf:datatype="&xsd;string">Thriller</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film238">
+<date rdf:datatype="&xsd;string">2013</date >
+ <title rdf:datatype="&xsd;string">North Country</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film239">
+<date rdf:datatype="&xsd;string">1927</date >
+ <title rdf:datatype="&xsd;string">The Muppet Christmas Carol</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film240">
+<date rdf:datatype="&xsd;string">1928</date >
+ <title rdf:datatype="&xsd;string">Charlie's Angels</title>
+  <Type_Film rdf:datatype="&xsd;string">Drama</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film241">
+<date rdf:datatype="&xsd;string">1929</date >
+ <title rdf:datatype="&xsd;string">Cidade de Deus</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film242">
+<date rdf:datatype="&xsd;string">1930</date >
+ <title rdf:datatype="&xsd;string">Trois couleurs: Rouge</title>
+  <Type_Film rdf:datatype="&xsd;string">Crime</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film243">
+<date rdf:datatype="&xsd;string">1931</date >
+ <title rdf:datatype="&xsd;string">The th Day</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+<Film rdf:about="&untitled-ontology-8;Film244">
+<date rdf:datatype="&xsd;string">1932</date >
+ <title rdf:datatype="&xsd;string">This Boy's Life</title>
+  <Type_Film rdf:datatype="&xsd;string">Comedy</Type_Film>
+</Film>
+
+	</rdf:RDF>
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
+	
+	
+	
+	
+	
+	
+	

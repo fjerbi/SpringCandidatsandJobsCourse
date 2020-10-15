@@ -1,0 +1,21 @@
+package com.esprit.jobs.repository;
+
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.esprit.jobs.model.Candidat;
+
+
+
+@Repository
+public interface CandidatRepository extends JpaRepository<Candidat, Integer> {
+	
+	
+@Query("select c from candidat c where c.nom like :nom");
+
+
+
+}
