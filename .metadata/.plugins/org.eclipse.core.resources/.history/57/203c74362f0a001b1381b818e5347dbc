@@ -1,5 +1,0 @@
-package com.esprit.jobs.repository;
-
-public interface CandidatRepository {
-
-}

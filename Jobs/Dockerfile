@@ -1,0 +1,2 @@
+FROM java:8
+EXPOSE 8089
